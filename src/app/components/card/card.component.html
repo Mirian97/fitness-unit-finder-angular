@@ -1,0 +1,36 @@
+<div class="card">
+  <span [ngClass]="{ opened: location.opened }">
+    {{ location.opened ? "Aberto" : "Fechado" }}
+  </span>
+  <h3>{{ location.title }}</h3>
+  <p [innerHTML]="location.content"></p>
+  <div class="divider"></div>
+  <ul>
+    <img
+      *ngIf="location.mask"
+      [src]="'assets/images/' + location.mask + '-mask.png'"
+      alt="Máscara"
+    />
+    <img
+      *ngIf="location.towel"
+      [src]="'assets/images/' + location.towel + '-towel.png'"
+      alt="Toalha"
+    />
+    <img
+      *ngIf="location.fountain"
+      [src]="'assets/images/' + location.fountain + '-fountain.png'"
+      alt="Toalha"
+    />
+    <img
+      *ngIf="location.locker_room"
+      [src]="'assets/images/' + location.locker_room + '-lockerroom.png'"
+      alt="Armário"
+    />
+  </ul>
+  <ul>
+    <li *ngFor="let schedule of location.schedules">
+      <b>{{ schedule.weekdays }}</b>
+      {{ schedule.hour }}
+    </li>
+  </ul>
+</div>
