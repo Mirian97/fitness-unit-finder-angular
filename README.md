@@ -1,6 +1,4 @@
-<div style="background-color: #000; padding: 20px 50px;">
-  <img src="./public/assets/svgs/logo.svg" />
-</div>
+<img src="./public/assets/svgs/logo.svg" style="background-color: #000; padding: 20px 50px;" />
 <br/>
 
 # 🏋️‍♂️Desafio Frontend - Smart Fit
