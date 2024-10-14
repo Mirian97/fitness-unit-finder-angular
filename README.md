@@ -1,27 +1,57 @@
-# SmartfitChallenge
+<div style="background-color: #000; padding: 20px 50px;">
+  <img src="./public/assets/svgs/logo.svg" />
+</div>
+<br/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+# 🏋️‍♂️Desafio Frontend - Smart Fit
 
-## Development server
+Neste repositório, compartilho minha solução para o desafio da SmartFit, onde utilizei minhas habilidades em Angular para desenvolver uma aplicação funcional e otimizada.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📒 Sobre o desafio
 
-## Code scaffolding
+A Smart Fit, atuante no segmento de fitness, enfrentou diversas mudanças durante a pandemia. Como resposta, surgiu a necessidade de desenvolver uma página para consultar o status das unidades (abertas ou fechadas).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Neste desafio, foram implementadas as seguintes funcionalidades, conforme as regras de negócio estabelecidas:
 
-## Build
+### Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Carregamento das unidades a partir do arquivo JSON [locations.json](https://test-frontend-developer.s3.amazonaws.com/data/locations.json) via requisição `GET`.
+- Consulta de todas as unidades disponíveis. <br/>
+- Pesquisa de unidades com filtros personalizados.
+- Exibição da previsão do número total de resultados.
+- Listagem detalhada das unidades encontradas após a busca.
 
-## Running unit tests
+### Regras de negócio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Filtra unidades com base no status de abertura (abertas ou fechadas).
+- Aplica filtros conforme o horário de funcionamento.
+- Exibe a mensagem "Nenhuma unidade encontrada" quando não há resultados disponíveis.
+- Valida e apresenta os ícones corretos conforme o status de cada unidade.
 
-## Running end-to-end tests
+## 🌟 Layout
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+O layout da aplicação foi desenvolvido com base nos materiais fornecidos, que incluem designs para dispositivos móveis e desktop, além de diretrizes para cores, imagens e fontes. A fidelidade ao layout original foi preservada, garantindo que a aplicação seja responsiva e ofereça uma experiência otimizada em dispositivos móveis, tablets e desktops.
 
-## Further help
+## ⚒️ Como Executar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Para executar a aplicação localmente, siga os passos abaixo:
+
+1. Clone este repositório:
+
+```bash
+  git clone https://github.com/Mirian97/gyms-angular.git
+  cd gyms-angular
+
+```
+
+2. Instale as dependências
+
+```bash
+  npm install
+```
+
+3. Inicie a aplicação
+
+```bash
+  npm start
+```
