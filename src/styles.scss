@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --dark-grey: #333333;
+  --light-grey: #808080;
+  --light-text: #e5e5e5;
+  --medium-text: #939393;
+  --yellow: #ffb612;
+  --red: #dc0a17;
+  --green: #2fc022;
+}
+
+* {
+  font-family: "Gotham", "Arial", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--dark-grey);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--dark-grey);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 14px;
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--yellow);
+
+  &:hover {
+    filter: brightness(95%);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--light-text);
+
+  &:hover {
+    background-color: var(--dark-grey);
+    color: #fff;
+  }
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham/gotham-light.woff2") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham/gotham-book.woff2") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham/gotham-bold.woff2") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham/gotham-black.woff2") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
