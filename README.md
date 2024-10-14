@@ -1,5 +1,4 @@
 <img src="./public/assets/images/logo.jpg" alt="Logo" width="100%" />
-<br/>
 
 # 🏋️‍♂️Desafio Frontend - Smart Fit
 
