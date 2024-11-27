@@ -36,7 +36,7 @@ Para executar a aplicação localmente, siga os passos abaixo:
 1. Clone este repositório:
 
 ```bash
-  git clone https://github.com/Mirian97/gyms-angular.git
+  git clone https://github.com/Mirian97/fitness-unit-finder.git
   cd gyms-angular
 
 ```
